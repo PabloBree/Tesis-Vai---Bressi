@@ -9,7 +9,7 @@ def get_database():
     ca = certifi.where()
 
     client = pymongo.MongoClient(
-        "mongodb+srv://tesisUser:CG3AKCe7aGs1QGoy@clusterdev.pabepap.mongodb.net/?retryWrites=true&w=majority", tlsCAFile=ca)
+        "mongodb+srv://.mongodb.net/?retryWrites=true&w=majority", tlsCAFile=ca)
     db = client.test
 
     # client devuelve la conexion y el 2do return devuelve la raiz de la bd.
